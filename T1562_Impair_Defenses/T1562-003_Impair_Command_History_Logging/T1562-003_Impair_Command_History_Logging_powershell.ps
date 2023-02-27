@@ -1,2 +1,3 @@
-$c = Get-PSReadLineOption |findstr "HistorySavePath" 
-$c -split "HistorySavePath.* " -replace '\s',''
+$a = Get-PSReadLineOption |findstr "HistorySavePath" 
+$b = $a -split "HistorySavePath.* " -replace '\s',''
+type $b
